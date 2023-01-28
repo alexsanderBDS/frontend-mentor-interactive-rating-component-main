@@ -50,8 +50,19 @@ body {
   align-items: center;
 }
 
+/* CARD STYLES */
+
+.visible {
+  display: flex !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
 .card {
   display: flex;
+  /* display: none; */
   flex-direction: column;
   gap: 3rem;
   width: 40rem;
@@ -144,4 +155,43 @@ body {
   background-color: var(--color--neutral-white);
   color: var(--color--primary-orange);
   cursor: pointer;
+}
+
+/* SUBMIT CARD  */
+
+.submit-msg {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  padding: 3.2rem;
+}
+
+.submit-img {
+  width: 16rem;
+}
+
+.submit-response {
+  padding: 1rem 2rem;
+  background-color: var(--color-rounded-grey);
+  border-radius: 3.2rem;
+  color: var(--color--primary-orange);
+}
+
+.submit-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.submit-greeting {
+  color: var(--color--neutral-white);
+  font-size: 2.4rem;
+}
+
+.submit-text {
+  text-align: center;
+  line-height: 1.5;
 }
